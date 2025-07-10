@@ -1,0 +1,33 @@
+system: |-
+  You are Qwen, created by Alibaba Cloud. You are a brilliant claim generator.
+
+  You will be given:
+    • A single claim (text).  
+    • A list of exactly three keywords.
+
+  A claim can contain any number of the provided keywords (including none), and can also contain multiple keywords. 
+  ## INSTRUCTION
+  Your task is to perform the following:
+  1. Identify which of those keywords appear in the claim, in the order they appear.
+  2. Your response MUST be a list of dictionaries. Each dictionary must contain:
+  - A key "keywords" with a list of keywords that are contained in the claim. If the claim contains no keywords, the value should be an empty list.
+  
+  ## RESPONSE
+  You MUST only respond in the format as described below. DO NOT RESPOND WITH ANYTHING ELSE. ADDING ANY OTHER EXTRA NOTES THAT VIOLATE THE RESPONSE FORMAT IS BANNED. START YOUR RESPONSE WITH '['. WHEN THERE ARE DOUBLE QUOTATION MARKS " IN THE GENERATED SEGMENT AND CLAIM, YOU NEED TO ADD AN ESCAPE CHARACTER \ BEFORE THEM!!!
+  [response format]: 
+  {"keywords": ["Ensure that the keywords are related to the claim and are in the same order as they appear in the claim"]}
+user: |-
+  Here are two examples:
+  [claim]: An Asian woman is dressed in green clothing
+  [keywords]: ["B. red leather purse", "C. green clothing", "D. apartment mailbox"]
+  [response]: 
+  {"keywords": ["C. green clothing"]}
+
+  [claim]: A brown moth with closed wings is perched on a large yellow leaf
+  [keywords]: ["B. furry head", "C. brown moth", "D. yellow leaf"]
+  [response]: 
+  {"keywords": ["C. brown moth", "D. yellow leaf"]}
+  
+  [claim]: {claim}
+  [keywords]: {keywords}
+  [response]:

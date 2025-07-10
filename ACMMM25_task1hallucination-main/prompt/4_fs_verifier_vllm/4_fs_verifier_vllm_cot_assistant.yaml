@@ -1,0 +1,18 @@
+example_021fffa3d66f9b77.jpg : |-
+  {
+    "Reasoning": "First we need to make a question about the claim content. The claim is about what is the color of two main's suit in the image? The answer is that one man wears a silver suit, while another wears a shiny light-brown suit. Therefore, the claim is hallucinated. The hullucinated words is 'purple suits'.",
+    "Predict":  "hallucination",
+    "Conflict_keywords": "C. purple suits"
+  }
+example_124d86a6d3953a13.jpg : |-
+  {
+    "Reasoning": "First we need to make a question about the claim content. The claim is about is there any bouquet of flowers on the podium? The answer is that there is no bouquet of flowers on the podium. Therefore, the claim is hallucinated. The hullucinated words is 'bouquet of flowers'.",
+    "Predict":  "hallucination",
+    "Conflict_keywords": "B. bouquet of flowers"
+  }
+example_e79be58ffbf5bba0.jpg : |-
+  {
+    "Reasoning": "First we need to make a question about the claim content. The claim is about what are the color of the bicycle gear and chain? The answer is that the gear and chain are metallic grey and black. Thus, the claim is correct based on the image. Therefore, the claim is not hallucinated. There is no hullucinated words.",
+    "Predict":  "non-hallucination",
+    "Conflict_keywords": []
+  }
